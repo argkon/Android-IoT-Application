@@ -25,7 +25,7 @@ previous 4 commands is being picked and activated for a random time window.
 machine and the help of students who attended the class this semester, without referencing any personal information. Specifically, 
 starting off, the specified CSV files are being read and the Entropy vector is being calculated, which is composed of the values of 14 
 different channels/sensors that the EMOTIV machine consists of. Continuing, regarding the available Train Set and by using the Weight knn classification algorithm, a category for each CSV file is being produced (either Eyes Open or Eyes Closed). Depending on the category produced, a new command "ON"/"OFF" (sent/received via filestopic) is being made. Then, the proper Runnable is dropped into a buffer (FIFO queue of infinite length) and shortly after, the consumer thread gains periodically data from the queue. Each copied Runnable is run with the help of the threads while the MQTT broker guides it towards its final destination, the mobile terminal where it is being received.
-- *StopAll*: any consumer thread action is being stopped and the buffer is cleaned using a "signal" 2(stopping all)
+- *StopAll*: any consumer thread action is being stopped and the buffer is cleaned using a "signal" 2 (stopping all)
 - *Exit*: The Java app shuts down using a "signal" 1 (exit)
 
 ### Android Application 
