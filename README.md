@@ -43,5 +43,5 @@ Automatic mode is selected, the MQTT connection is done automatically.
 ### Authors
 
   - Panayiotis Raptis,
-  - Konstantinos-Marios Argyriades,
+  - Konstantinos Argyriades,
   - Dimitrios Anastasopoulos
